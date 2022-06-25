@@ -48,15 +48,19 @@ namespace K2
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
+            this.lbTitle = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.OrderPanel.SuspendLayout();
             this.ProdPanel.SuspendLayout();
             this.servicePanel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.OrderPanel);
             this.panel1.Controls.Add(this.orderbtn);
@@ -264,6 +268,7 @@ namespace K2
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.lbTitle);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(220, 0);
             this.panel2.Name = "panel2";
@@ -282,6 +287,29 @@ namespace K2
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
             // 
+            // lbTitle
+            // 
+            this.lbTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Meiryo", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTitle.Location = new System.Drawing.Point(284, 34);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(113, 31);
+            this.lbTitle.TabIndex = 2;
+            this.lbTitle.Text = "ГЛАВНАЯ";
+            // 
+            // button11
+            // 
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.Location = new System.Drawing.Point(0, 652);
+            this.button11.Name = "button11";
+            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button11.Size = new System.Drawing.Size(220, 56);
+            this.button11.TabIndex = 7;
+            this.button11.Text = "Заказы";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -297,6 +325,8 @@ namespace K2
             this.OrderPanel.ResumeLayout(false);
             this.ProdPanel.ResumeLayout(false);
             this.servicePanel.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -322,6 +352,8 @@ namespace K2
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label lbTitle;
+        private System.Windows.Forms.Button button11;
     }
 }
 
